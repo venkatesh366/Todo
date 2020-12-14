@@ -1,0 +1,161 @@
+.body{
+    width: 65%;
+    height: 70%;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  .head-flex{
+    margin: 25px;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  /* flex-wrap: wrap; */
+  /* background-color: green; */
+  }
+  .head-title{
+  
+  
+  }
+  .head-icon{
+   position: relative;
+   top:1rem;
+  font-weight: lighter;
+    font-size:2rem ;
+  }
+  .fa{
+    color:red;
+  }
+  .body-flex{
+   
+    display:flex;
+    justify-content: space-around;
+  
+  }
+  .Task-box1{
+  
+    width:25%;
+    height:350px;
+    border:1.5px solid red;
+    border-radius:10px;
+    box-shadow: 3px 3px 3px black;
+  }
+  .mar{
+    margin-left:20%;
+  }
+  h3{
+    color:red;
+    font-size:1.5rem;
+  }
+  .Task1{
+  color:red;
+  font-size:1.5rem;   
+  text-decoration: line-through solid red;
+  }
+  .Task2{
+  position: relative;
+  right:13px;
+  font-weight: lighter;
+  font-size:1.3rem;
+  }
+  .blur{
+    
+    position: fixed;
+    z-index: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(209, 202, 202, 0.863) ; */
+  backdrop-filter: blur(6px);
+  }
+  .popup{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      z-index: 100;
+      width: 350px;
+      height: 200px;
+      border: 1px solid #FF0000;
+      border-radius: 8px;
+      text-align: center;
+      background-color:white ;
+      box-shadow: 0 0 6px 1px black;
+  }
+  .popup h2{
+      color: #FF0000;
+  }
+  button{
+    color:white;
+    background-color: #FF0000;
+    border-radius:15px;
+    border: 1px solid white;
+    width: 70px;
+    height: 30px;
+    font-size: 1rem;
+}
+input{
+    border: 1px solid #FF0000;
+    height: 28px;
+    width:200px;
+}
+  
+  @media(min-width:320px) and (max-width:460px){
+  
+    .body{
+        width: 90%;
+        height: 90%;
+    }
+    .span1{
+        display:none;
+    }
+    .body-flex{
+            height: 60%;
+        display:flex;
+      align-content: space-between;
+       flex-direction: column;
+     margin:10px;
+    
+    }
+    .Task-box1{
+  
+        width:90%;
+        height:auto;
+        border:0.5px solid red;
+        border-radius:10px;
+        box-shadow: 3px 3px 3px black;
+        border-spacing: 20px;
+        margin-bottom:30px;
+        
+    }
+    .Task1,.Task2{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .mar{
+        margin-left:2%;
+    }
+    h3{
+        color:black;
+        font-weight: lighter;
+    }
+    .popup{
+      width: 250px;
+      height: 150px;
+     
+    }
+  }
+
+     
+  
